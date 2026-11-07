@@ -1,0 +1,515 @@
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS DEL CUERPO */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f3ed;
+    color: #3e2723;
+    line-height: 1.6;
+}
+
+/* ESTILOS DEL ENCABEZADO */
+.encabezado {
+    background-color: #4e342e;
+    color: white;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* PRESENTACIÓN PRINCIPAL */
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    padding: 60px 8%;
+    background-color: #f8f3ed;
+}
+
+/* CONTENIDO DE LA PRESENTACIÓN */
+
+.presentacion-contenido {
+    flex: 1;
+}
+
+/* TEXTO PEQUEÑO */
+
+.subtitulo {
+    color: #a87950;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* TÍTULO PRINCIPAL */
+
+.presentacion h1 {
+    font-size: 42px;
+    color: #4e342e;
+    margin-bottom: 20px;
+}
+
+/* DESCRIPCIÓN */
+
+.presentacion p {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+/* IMAGEN PRINCIPAL */
+
+.imagen-principal {
+    width: 48%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* LOGOTIPO */
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo {
+    font-family: 'Parisienne', cursive;
+    font-size: 42px;
+    font-weight: 400;
+    color: #d7a86e;
+    letter-spacing: 1px;
+    text-transform: none;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d7a86e;
+}
+
+/* SECCIONES GENERALES */
+
+.seccion {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.seccion h2 {
+    color: #4e342e;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    color: #795548;
+    margin-bottom: 30px;
+}
+
+/* DISEÑO DE LA SECCION DEL MENU */
+
+.seccion-menu {
+    background-color: #f5eadb;
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.seccion-menu h2 {
+    color: #4e342e;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.descripcion-menu {
+    color: #80665a;
+    margin-bottom: 35px;
+}
+
+/* DISTRIBUCION DE LAS TARJETAS */
+
+.contenedor-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* DISEÑO DE CADA PRODUCTO */
+
+.tarjeta-menu {
+    background-color: #fffaf4;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s;
+}
+
+.tarjeta-menu:hover {
+    transform: translateY(-6px);
+}
+
+.tarjeta-menu img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.info-producto {
+    padding: 20px;
+}
+
+.info-producto h3 {
+    color: #4e342e;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.info-producto p {
+    color: #80665a;
+    margin-bottom: 15px;
+}
+
+.info-producto span {
+    color: #a8753e;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ADAPTACION PARA CELULARES */
+
+@media (max-width: 768px) {
+    .contenedor-menu {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ENCABEZADOS */
+
+thead {
+    background-color: #4e342e;
+    color: white;
+}
+
+th {
+    padding: 18px;
+}
+
+/* CELDAS */
+
+td {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* EFECTO AL PASAR EL CURSOR */
+
+tbody tr:hover {
+    background-color: #f1e3d5;
+}
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+    background-color: #6d4c41;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #a87950;
+    color: white;
+}
+
+/* SECCION DE CONTACTO */
+
+#contacto {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #f1e7dc;
+}
+
+#contacto form {
+    max-width: 550px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+/* CAMPOS DEL FORMULARIO */
+
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c5a58a;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* AREA DEL MENSAJE */
+
+#contacto textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* BOTON DE ENVIO */
+
+#contacto button {
+    background-color: #4e342e;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: #a87950;
+}
+
+
+/* AJUSTE DE PRESENTACION EN COMPUTADORAS */
+@media (min-width: 769px) {
+
+    .presentacion {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        gap: 40px;
+    }
+    
+
+
+    .presentacion-contenido {
+        flex: 1;
+    }
+
+    .imagen-principal {
+        width: 48%;
+        height: 350px;
+        object-fit: cover;
+    }
+}
+    
+/* DISEÑO DISPOSITIVOS MÓVILES */
+@media (max-width: 768px) {
+
+    .encabezado {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        text-align: center;
+        padding: 35px 5%;
+    }
+
+    .presentacion h1 {
+        font-size: 30px;
+    }
+
+    .imagen-principal {
+        width: 100%;
+        height: 260px;
+    }
+
+    .seccion {
+        padding: 40px 5%;
+    }
+
+    table {
+        min-width: 500px;
+    }
+}
+
+/* GALERÍA DE IMÁGENES */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 30px 5%;
+}
+
+.tarjeta {
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta h3 {
+    text-align: center;
+    padding: 12px;
+    margin: 0;
+}
+
+/* Adaptación para celulares */
+
+@media (max-width: 768px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .tarjeta img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ===== PIE DE PAGINA ===== */
+
+.footer {
+    background-color: #4e342e;
+    color: #f8f3ed;
+    padding: 45px 8% 20px;
+}
+
+/* CONTENIDO DEL FOOTER */
+
+.footer-contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 35px;
+}
+
+/* COLUMNAS */
+
+.footer-columna h2 {
+    color: #d7a86e;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.footer-columna h3 {
+    color: #d7a86e;
+    margin-bottom: 15px;
+}
+
+.footer-columna p {
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+/* LISTA DE ENLACES */
+
+.footer-columna ul {
+    list-style: none;
+}
+
+.footer-columna li {
+    margin-bottom: 10px;
+}
+
+.footer-columna a {
+    color: #f8f3ed;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-columna a:hover {
+    color: #d7a86e;
+}
+
+/* PARTE INFERIOR */
+
+.footer-final {
+    border-top: 1px solid #80665a;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-final p {
+    margin-bottom: 8px;
+}
+
+/* ADAPTACION A CELULARES */
+
+@media (max-width: 768px) {
+
+    .footer-contenido {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 25px;
+    }
+
+}
+
+.mensaje-exito {
+    display: none;
+    background-color: #f5eadb;
+    color: #4e342e;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mensaje-exito.mostrar {
+    display: block;
+}

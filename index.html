@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content="Coffe Prince, cafeteria, postres y momentos especiales"> 
+
+    <title>Coffe Prince | Cafeteria</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- Encabezado e identidad -->
+    <header id="inicio" class="encabezado">
+        <a href="#inicio" class="logo">
+            Coffe Prince 
+        </a>
+
+        <!-- Barra de navegación -->
+        <nav class="navbar" aria-label="Navegación Principal">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- Contenido principal -->
+    <main>
+        <section class="presentacion">
+        <div class="presentacion-contenido">
+            <p class="subtitulo">Bienvenido a Coffe Prince</p>
+            <h1>Un buen café hace especial tu día</h1>
+            <p>Disfruta del delicioso sabor del café, postres artesanales y momento inolvidables.</p>
+            <a href="#menu" class="boton">Ver Menú</a>
+            <button class="boton">Reservar Mesa</button>
+        </div> 
+        <img 
+           src="Imagenes/cofee.jpg" 
+           alt="Imagen de café y postres" 
+           class="imagen-principal">
+
+        </section>
+
+<!-- Seccion de menu -->
+    <section id="menu" class="seccion-menu">
+        <h2>Nuestro menú</h2>
+        <p class="descripcion-menu">Un sabor especial en cada taza </p>
+        <div class="contenedor-menu">
+            <div class="tarjeta-menu">
+                <img  
+                src="Imagenes/americano.jpg"
+                alt="Café americano">
+            <div class="info-producto">
+                <h3>Café americano</h3>
+                <p>Café intenso y aromático.</p><span>$2.00</span>
+
+            </div>
+         </div>
+         <div class="tarjeta-menu">
+            <img 
+            src="Imagenes/capuchino.jpg"
+            alt="Capuchino">
+            <div class="info-producto">
+                <h3>Capuchino</h3>
+                <p>Espuma cremosa y café.</p><span>$3.00</span>
+            </div>
+
+        </div>
+        <div class="tarjeta-menu">
+            <img 
+            src="Imagenes/latte.jpg"
+            alt="Café latte">
+            <div class="info-producto">
+                <h3>Latte</h3>
+                <p>Suave, cremoso y delicioso.</p><span>$3.50</span>
+
+            </div>
+
+        </div>
+        <div class="tarjeta-menu">
+            <img src="Imagenes/pastel.jpg"
+            alt="Pastel de chocolate">
+            <div class="info-producto">
+                <h3>Pastel de chocolate</h3>
+                <p>Delicioso y lleno de chocolate.</p><span>$2.50</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+     <!-- Seccion de imágenes -->
+    <section id="galeria" class="seccion">
+        <h2>Nuestra galería</h2>
+        <p class="descripcion">Pequeños momentos llenos de sabor.</p>
+
+    <div class="galeria">
+    <article class="tarjeta">
+        <img 
+        src="imagenes/imagen2.jpg" 
+        alt="Café servido en una taza">
+        <h3>Café especial</h3>
+
+    </article><article class="tarjeta">
+        <img 
+        src="imagenes/imagen4.jpg"
+        alt="Pastel de chocolate">
+        <h3>Postres deliciosos</h3>
+
+    </article><article class="tarjeta">
+        <img 
+        src="imagenes/imagen3.jpg"
+        alt="Preparación de café">
+        <h3>Momentos especiales</h3>
+
+    </article>
+    </div>
+        </section>
+    
+    <!-- Seccion de contacto -->
+    <section id="contacto" class="seccion">
+        <h2>Contacto</h2>
+        <p class="descripcion">Déjanos un mensaje y nos pondremos en contacto contigo.</p>
+
+        <form action="#" method="post" class="formulario" id="formulario-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit" class="boton">Enviar</button>
+                     
+            </form>
+
+<p id="mensaje-exito" class="mensaje-exito">
+    ¡Gracias por contactar a Coffe Prince! 
+    Hemos recibido tu mensaje.
+
+</p>
+
+
+
+    </section>
+</main>
+
+<!-- Pie de página -->
+    <footer class="footer" id="pie">
+    <div class="footer-contenido"><!-- INFORMACIÓN DE LA CAFETERÍA -->
+    <div class="footer-columna">
+        <h2>Coffe Prince</h2>
+            <p>El lugar perfecto para disfrutar
+            de un buen café y momentos especiales. 
+            </p>
+
+    </div>
+
+<!-- ENLACES -->
+    <div class="footer-columna">
+        <h3>Enlaces rápidos</h3>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Nuestro menú</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+    </div>
+
+<!-- CONTACTO -->
+
+    <div class="footer-columna">
+        <h3>Contáctanos</h3>
+        <p>Correo: info@coffeprince.com</p>
+        <p>Horario: Lunes a Domingo</p>
+        <p>8:00 a. m. - 8:00 p. m.</p>
+    </div>
+
+    </div>
+
+<!-- DERECHOS RESERVADOS -->
+    <div class="footer-final">
+        <p>
+            &copy; 2026 Coffe Prince.
+            Todos los derechos reservados.
+        </p>
+        <p>Proyecto académico de Diseño Web 1.</p>
+
+    </div>
+
+</footer>
+    
+    <script src="Script.js"></script>
+
+</body>
+</html>
